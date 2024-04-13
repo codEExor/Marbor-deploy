@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/contacts.min.css">
+    <link rel="stylesheet" href="css/style.min.css">
+</head>
+
+<body>
+    
+    {% include 'app/module/_header/_header.html' %} 
+
+    <main class="main">
+        {% include 'app/module/_top/_top.html' %} 
+
+        <section class="map">
+          <div class="container">
+            <iframe id="map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d115495.50402265743!2d55.28379020207631!3d25.229025495281363!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3e5f6759c7757955%3A0xdc9a1315843ee548!2zQWwgUmFzaGlkaXlhIC0g0JTRg9Cx0LDQuSAtINCe0LHRitC10LTQuNC90LXQvdC90YvQtSDQkNGA0LDQsdGB0LrQuNC1INCt0LzQuNGA0LDRgtGL!5e0!3m2!1sru!2sru!4v1707660883031!5m2!1sru!2sru" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+          </div>
+        </section>
+
+        <section class="contact">
+          <div class="container">
+            <div class="contact__inner">
+              <div class="contact__info">
+                <h3 class="contact__info-title">
+                  Остались вопросы? Не стесняйтесь.
+                </h3>
+                <p class="contact__info-text">
+                  Свяжитесь с нами любым удобным для вас способом. Наши менеджеры ответят на все ваши вопросы в течении 24 часов после вашего обращения. Приятных покупок!
+                </p>
+                <ul class="contact__info-list">
+                  <li class="contact__info-item">
+                    <a class="contact__info-phone" href="tel:+01234567896">+0283 838 8393</a>
+                    <a class="contact__info-phone" href="tel:+01234567896">+0283 838 8295</a>
+                  </li>
+                  <li class="contact__info-item contact__info-item--location">
+                    75-80 49 C St - Al Rashidiya - Dubai Объединенные Арабские Эмираты
+                  </li>
+                  <li class="contact__info-item contact__info-item--email">
+                    <div>marbor@gmail.com</div>
+                    <div>company-marbor@gmail.com</div>
+                  </li>
+                </ul>
+              </div>
+              <form action="#" class="contact__form">
+                <p class="contact__form-title"></p>
+                <div class="contact__form-box">
+                  <input class="contact__form-input" type="text" placeholder="Ваше имя">
+                  <input class="contact__form-input" type="text" placeholder="Ваш Email">
+                </div>
+                <input class="contact__form-input" type="text" placeholder="Тема сообщения">
+                <textarea class="contact__form-textarea" placeholder="Ваше сообщение"></textarea>
+                <button class="contact__form-btn" type="submit">Отправить</button>
+              </form>
+            </div>
+          </div>
+        </section>
+
+    </main>
+
+    
+     {% include 'app/module/_footer/_footer.html' %} 
+
+   
+
+    <script src="js/main.min.js"></script>
+</body>
+
+</html>
